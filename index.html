@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/x-icon" href="./public/img/logo.png" />
+
+    <title>RanijakBank</title>
+  </head>
+
+  <body class="flex justify-center items-center">
+    <div class="w-[400px] flex flex-col items-center">
+      <img class="h-8 mt-8" src="./public/img/logo.png" />
+
+      <div class="mt-16 text-4xl font-medium">Welcome back</div>
+
+      <div class="relative mt-10 rounded-md shadow-sm w-[310px]">
+        <input
+          type="text"
+          name="cpf"
+          id="cpfInput"
+          maxlength="14"
+          class="block w-full h-[52px] rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm sm:leading-6"
+          placeholder="CPF"
+        />
+      </div>
+
+      <div class="relative mt-2 rounded-md shadow-sm w-[310px]">
+        <input
+          type="password"
+          name="passworld"
+          id="passworld"
+          class="block w-full h-[52px] rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm sm:leading-6"
+          placeholder="Passworld"
+        />
+      </div>
+
+      <div class="w-[310px] mt-4">
+        <button
+          type="submit"
+          class="flex w-full justify-center rounded-md bg-black px-3 p-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-slate-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600"
+        >
+          Login
+        </button>
+      </div>
+
+      <div class="mt-6 text-sm">
+        <span class="mr-2">Don't have an account?</span><span class="font-bold hover:underline">Sign up</span>
+      </div>
+
+      <div class="w-[310px] mt-4 flex justify-center items-center">
+        <span class="h-[1px] w-32 bg-gray-400"></span>
+        <span class="p-5 text-sm text-gray-400">OR</span>
+        <span class="h-[1px] w-32 bg-gray-400"></span>
+      </div>
+
+      <button
+        class="mt-4 hover:bg-gray-100 rounded-md w-[310px] h-[52px] border border-gray-300 flex items-center text-gray-500"
+      >
+        <div class="w-8">
+          <img class="h-4 ml-4" src="./public/img/google_icon.png" />
+        </div>
+        <div class="ml-4">Continue with Google</div>
+      </button>
+      <button
+        class="mt-2 hover:bg-gray-100 rounded-md w-[310px] h-[52px] border border-gray-300 flex items-center text-gray-500"
+      >
+        <div class="w-8">
+          <img class="h-4 ml-4" src="./public/img/microsoft_icon.avif" />
+        </div>
+        <div class="ml-4">Continue with Microsoft</div>
+      </button>
+      <button
+        class="mt-2 hover:bg-gray-100 rounded-md w-[310px] h-[52px] border border-gray-300 flex items-center text-gray-500"
+      >
+        <div class="w-8">
+          <img class="h-4 ml-4" src="./public/img/apple_icon.png" />
+        </div>
+        <div class="ml-4">Continue with Apple</div>
+      </button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
